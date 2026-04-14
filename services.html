@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - IT Company</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f9;
+        }
+
+        header {
+            background: #0a192f;
+            padding: 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0a192f;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            background: #0a192f;
+            color: white;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="careers.html">Careers</a>
+        <a href="contactme.php">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Our IT Services</h1>
+    <p style="text-align:center;">We deliver innovative and reliable technology solutions to help your business grow.</p>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>Website Design & Development</h3>
+            <p>We build modern, responsive, and user-friendly websites tailored to your business needs.</p>
+        </div>
+
+        <div class="card">
+            <h3>UI/UX & Layout Optimization</h3>
+            <p>We improve page structure and layout to enhance user experience and engagement.</p>
+        </div>
+
+        <div class="card">
+            <h3>Navigation & Usability Improvements</h3>
+            <p>We design intuitive navigation menus that make your website easy to explore.</p>
+        </div>
+
+        <div class="card">
+            <h3>CSS Styling & Visual Enhancement</h3>
+            <p>We enhance your website with professional styling, animations, and modern design trends.</p>
+        </div>
+
+        <div class="card">
+            <h3>Website Expansion & New Pages</h3>
+            <p>We add new pages like Services, About, and Contact to expand your website functionality.</p>
+        </div>
+
+        <div class="card">
+            <h3>Responsive Web Design</h3>
+            <p>We ensure your website works perfectly on mobile phones, tablets, and desktops.</p>
+        </div>
+
+        <div class="card">
+            <h3>Bug Fixing & Performance Optimization</h3>
+            <p>We fix layout issues, broken elements, and improve overall site performance.</p>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 IT Company | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
