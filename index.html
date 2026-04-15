@@ -52,7 +52,90 @@
             <h3>We make creativity work for your brand!</h3>
             <p>Ours is a team of creatives that is brainstorming on great ideas,<b> all. the. time.</b><br>
                 With our skills put together, you get an ensemble capable of doing anything and everything your brand needs.</p>
-            <a href="#"><button class="btn">Read More</button></a>
+             <!-- Stats -->
+      <div class="stats-row">
+        <div class="stat-box">
+          <div class="num">720+</div>
+          <div class="lbl">Projects Delivered</div>
+        </div>
+        <div class="stat-box">
+          <div class="num">8+</div>
+          <div class="lbl">Years of Experience</div>
+        </div>
+        <div class="stat-box">
+          <div class="num">480+</div>
+          <div class="lbl">Happy Clients</div>
+        </div>
+        <div class="stat-box">
+          <div class="num">10</div>
+          <div class="lbl">Team Members</div>
+        </div>
+      </div>
+ 
+      <!-- Extra paragraph -->
+      <p class="lead" style="margin-bottom: 20px;">
+        We're not just a creative agency we're your brand's long-term growth
+        partner. From initial concept to final execution, we handle every stage
+        of the creative process with passion, precision, and purpose.
+      </p>
+ 
+      <!-- Value cards -->
+      <div class="values-grid">
+        <div class="val-card">
+          <div class="icon">🎯</div>
+          <strong>Strategy First</strong>
+          <p>Every idea is backed by data-driven strategy aligned with your goals.</p>
+        </div>
+        <div class="val-card">
+          <div class="icon">✏️</div>
+          <strong>Bold Design</strong>
+          <p>Visual identities that turn heads and build lasting impressions.</p>
+        </div>
+        <div class="val-card">
+          <div class="icon">🤝</div>
+          <strong>True Partnership</strong>
+          <p>We listen, adapt, and grow together with every client we work with.</p>
+        </div>
+        <div class="val-card">
+          <div class="icon">🚀</div>
+          <strong>Fast Delivery</strong>
+          <p>Quality work without the endless waiting — we respect your timeline.</p>
+        </div>
+      </div>
+ 
+      <!-- Closing paragraph -->
+      <p class="lead" style="color: #888; font-size: 14px; margin-bottom: 28px;">
+        Our diverse team of designers, strategists, developers, and storytellers
+        brings a unique blend of talent to every project — ensuring your brand
+        voice is heard loud and clear in a crowded market.
+      </p>
+ 
+    </div><!-- end extra-content -->
+     </div>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ 
+  <script>
+    function toggleMore() {
+      const content = document.getElementById('extraContent');
+      const btn = document.getElementById('readMoreBtn');
+      const isOpen = content.classList.contains('open');
+ 
+      content.classList.toggle('open');
+      btn.classList.toggle('open');
+ 
+      if (isOpen) {
+        btn.innerHTML = 'Read More <span class="arrow">&#8964;</span>';
+      } else {
+        btn.innerHTML = 'Show Less <span class="arrow" style="display:inline-block; transform:rotate(180deg)">&#8964;</span>';
+      }
+    }
+  </script>
+ 
+    <br>
+    <button class="read-more-btn" style="display: block; margin: 0 auto;" id="readMoreBtn" onclick="toggleMore()">
+      Read More <span class="arrow">&#8964;</span>
+    </button>
+ 
         </div>
     </div>
   </section>
