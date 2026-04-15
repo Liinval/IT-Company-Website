@@ -35,20 +35,7 @@ $(document).ready(function(){
 	};
 	  updateCount();
    });
- function toggleMore() {
-      const content = document.getElementById('extraContent');
-      const btn = document.getElementById('readMoreBtn');
-      const isOpen = content.classList.contains('open');
- 
-      content.classList.toggle('open');
-      btn.classList.toggle('open');
- 
-      if (isOpen) {
-        btn.innerHTML = 'Read More <span class="arrow">&#8964;</span>';
-      } else {
-        btn.innerHTML = 'Show Less <span class="arrow" style="display:inline-block; transform:rotate(180deg)">&#8964;</span>';
-      }
-    };
+
    (function ($) {
     "use strict";
     
