@@ -31,6 +31,16 @@ body{
     position: fixed;
 }
 
+@media  (min-width: 1000px){
+    .header .navbar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+    
+}
+
+
 .header .logo img{
     width: 130%;
     height: 3rem;
