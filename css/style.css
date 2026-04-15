@@ -105,7 +105,7 @@ body{
     top: 0;
     left: 0;
     z-index: 100;
-    position: fixed;
+    /*position: fixed;*/
 }
 
 .header .logo img{
@@ -115,11 +115,18 @@ body{
     left: 0;
 }
 
+.header .navbar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
 .header .navbar ul{
     list-style-type: none;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
 }
 
 .header .navbar ul li{
@@ -145,6 +152,10 @@ body{
     cursor: pointer;
     font-size: 3rem;
     display: none;
+    cursor: pointer;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
 }
 
 .home{
