@@ -1206,9 +1206,6 @@ body{
     .contact{
         text-align: center;
         align-items: center;
-        padding: 80px 40px;
-        background: #0f0f0f;
-    }
     }
     
     .contact .heading{
@@ -1225,8 +1222,8 @@ body{
 			flex-wrap: wrap;
 			padding: 10px;
 			border-radius: 10px;
-			background: #22d3ee;
-			box-shadow: 0px 0px 10px 0px #3d3b3b;
+			background: #fff;
+			box-shadow: 0px 0px 10px 0px #666;
 		}
 
 		.contact-map
@@ -1246,7 +1243,6 @@ body{
 			height: auto;
 			flex: 50%;
 			text-align: left;
-            background: #22d3ee
 		}
 		.contact-form-txt
 		{
@@ -1273,12 +1269,12 @@ body{
 		}
 		.contact-form-txt::placeholder
 		{
-			color: #000000;
+			color: #aaa;
             font-size: 1.5rem;
 		}
         .contact-form-email::placeholder
 		{
-			color: #000000;
+			color: #aaa;
             font-size: 1.5rem;
 		}
 		.contact-form-txtarea
@@ -1296,7 +1292,7 @@ body{
 		}
 		.contact-form-txtarea::placeholder
 		{
-			color: #000000;
+			color: #aaa;
             font-size: 1.5rem;
 		}
 
@@ -1306,7 +1302,7 @@ body{
             outline: none;
             border: none;
             border-radius: 5rem;
-            background: #a51adc;
+            background: white;
             border-style: groove;
             border-color: #002e5f;
             font-size: 1.5rem;
@@ -1335,7 +1331,7 @@ body{
 		}
 		.contact-form-phone::placeholder
 		{
-			color: #000000;
+			color: #aaa;
             font-size: 1.5rem;
 		}
 
@@ -1358,3 +1354,4 @@ body{
         .faq .row .accordion-container{
             width: 100%;
         }
+}
