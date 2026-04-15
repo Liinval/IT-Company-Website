@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - IT Company</title>
+
+    <style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #ffffff;
+    color: #0a192f;
+}
+
+/* Header */
+header {
+    background: #0a192f;
+    padding: 15px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #0a192f;
+}
+
+/* Services Grid */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Cards */
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+    color: #00bcd4;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #0a192f;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="container">
+    <h1>Our IT Services</h1>
+    <p style="text-align:center;">
+        We deliver innovative and reliable technology solutions to help your business grow.
+    </p>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>Website Design & Development</h3>
+            <p>We build modern, responsive, and user-friendly websites tailored to your business needs.</p>
+        </div>
+
+        <div class="card">
+            <h3>UI/UX Design</h3>
+            <p>We design clean and user-friendly interfaces for better user experience.</p>
+        </div>
+
+        <div class="card">
+            <h3>Software Development</h3>
+            <p>We develop custom software solutions for businesses and organizations.</p>
+        </div>
+
+        <div class="card">
+            <h3>Mobile App Development</h3>
+            <p>We create Android and iOS apps with smooth performance and modern UI.</p>
+        </div>
+
+        <div class="card">
+            <h3>IT Support</h3>
+            <p>We provide technical support and maintenance for systems and networks.</p>
+        </div>
+
+        <div class="card">
+            <h3>Cybersecurity</h3>
+            <p>We protect your systems and data from online threats and attacks.</p>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+   
+</footer>
+
+</body>
+</html>

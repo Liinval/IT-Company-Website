@@ -105,7 +105,6 @@ body{
     top: 0;
     left: 0;
     z-index: 100;
-    position: fixed;
 }
 
 .header .logo img{
@@ -115,11 +114,21 @@ body{
     left: 0;
 }
 
+@media  (min-width: 1000px){
+    .header .navbar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+    
+}
+
+
+
 .header .navbar ul{
     list-style-type: none;
     display: flex;
     align-items: center;
-    justify-content: space-around;
 }
 
 .header .navbar ul li{
@@ -145,6 +154,8 @@ body{
     cursor: pointer;
     font-size: 3rem;
     display: none;
+    cursor: pointer;
+   
 }
 
 .home{
@@ -215,7 +226,152 @@ body{
     overflow: hidden;
     line-height: 10rem;
 }
-
+.section-label {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #1a2e5e;
+      border: 1.5px solid #1a2e5e;
+      border-radius: 2px;
+      padding: 6px 18px;
+      margin-bottom: 28px;
+    }
+ 
+    .about-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(26px, 4vw, 38px);
+      color: #111;
+      margin-bottom: 20px;
+      line-height: 1.25;
+    }
+ 
+    .about-section .lead {
+      font-size: 16px;
+      color: #444;
+      max-width: 680px;
+      margin: 0 auto 12px;
+      line-height: 1.75;
+    }
+ 
+    .about-section .lead strong {
+      color: #1a2e5e;
+    }
+ 
+    /* Read More expandable area */
+    .extra-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, opacity 0.4s ease;
+      opacity: 0;
+    }
+ 
+    .extra-content.open {
+      max-height: 600px;
+      opacity: 1;
+    }
+ 
+    /* Stats row */
+    .stats-row {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin: 28px 0;
+    }
+ 
+    .stat-box {
+      text-align: center;
+    }
+ 
+    .stat-box .num {
+      font-family: 'Playfair Display', serif;
+      font-size: 34px;
+      color: #1a2e5e;
+      font-weight: 700;
+      line-height: 1;
+    }
+ 
+    .stat-box .lbl {
+      font-size: 13px;
+      color: #888;
+      margin-top: 4px;
+    }
+ 
+    /* Values grid */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+      max-width: 700px;
+      margin: 0 auto 24px;
+    }
+ 
+    .val-card {
+      background: #f4f6fb;
+      border-radius: 10px;
+      padding: 14px 12px;
+    }
+ 
+    .val-card .icon {
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+ 
+    .val-card p {
+      font-size: 13px;
+      color: #555;
+      margin: 0;
+    }
+ 
+    .val-card strong {
+      display: block;
+      font-size: 14px;
+      color: #1a2e5e;
+      margin-bottom: 3px;
+    }
+ 
+    /* Read More button */
+    .read-more-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1.5px solid #1a2e5e;
+      border-radius: 30px;
+      padding: 10px 28px;
+      background: transparent;
+      color: #1a2e5e;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      margin-top: 8px;
+    }
+ 
+    .read-more-btn:hover {
+      background: #1a2e5e;
+      color: #fff;
+    }
+ 
+    .read-more-btn .arrow {
+      transition: transform 0.3s;
+      display: inline-block;
+    }
+ 
+    .read-more-btn.open .arrow {
+      transform: rotate(180deg);
+    }
+ 
+    /* Divider */
+    .divider {
+      width: 48px;
+      height: 3px;
+      background: #1a2e5e;
+      margin: 0 auto 20px;
+      border-radius: 2px;
+    }
 .about .row{
     line-height: 4rem;
     display: flex;
@@ -757,6 +913,7 @@ body{
 
 .contact .heading{
     margin-bottom: 5rem;
+    background: #0e78f1;
 }
 
 .contact-in
@@ -768,7 +925,7 @@ body{
 			flex-wrap: wrap;
 			padding: 10px;
 			border-radius: 10px;
-			background: #fff;
+			background: #038eff;
 			box-shadow: 0px 0px 10px 0px #666;
 		}
 
@@ -801,6 +958,7 @@ body{
 			outline: none;
 			margin-bottom: 20px;
 			padding: 15px;
+            background: rgb(237, 239, 220);
 		}
         .contact-form-email
 		{
@@ -813,15 +971,16 @@ body{
 			outline: none;
 			margin-bottom: 20px;
 			padding: 15px;
+            background: rgb(237, 239, 220);
 		}
 		.contact-form-txt::placeholder
 		{
-			color: #aaa;
+			color: #000000;
             font-size: 1.5rem;
 		}
         .contact-form-email::placeholder
 		{
-			color: #aaa;
+			color: #000000;
             font-size: 1.5rem;
 		}
 		.contact-form-txtarea
@@ -836,10 +995,11 @@ body{
 			margin-bottom: 20px;
 			padding: 15px;
 			font-family: 'Poppins', sans-serif;
+            background: rgb(237, 239, 220);
 		}
 		.contact-form-txtarea::placeholder
 		{
-			color: #aaa;
+			color: #000000;
             font-size: 1.5rem;
 		}
 
@@ -849,7 +1009,7 @@ body{
             outline: none;
             border: none;
             border-radius: 5rem;
-            background: white;
+            background: rgb(237, 239, 220);
             border-style: groove;
             border-color: #002e5f;
             font-size: 1.5rem;
@@ -862,7 +1022,7 @@ body{
             letter-spacing: .1rem;
             opacity: .9;
             color: white;
-            background: #002e5f;
+            background: #aa05dc;
         }
 		.contact-form-phone
 		{
@@ -875,10 +1035,11 @@ body{
 			outline: none;
 			margin-bottom: 20px;
 			padding: 15px;
+            background: rgb(237, 239, 220);
 		}
 		.contact-form-phone::placeholder
 		{
-			color: #aaa;
+			color: #000000;
             font-size: 1.5rem;
 		}
 
