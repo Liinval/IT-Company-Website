@@ -715,6 +715,7 @@ body{
 
 .contact .heading{
     margin-bottom: 5rem;
+    background: #0e78f1;
 }
 
 .contact-in
@@ -726,7 +727,7 @@ body{
 			flex-wrap: wrap;
 			padding: 10px;
 			border-radius: 10px;
-			background: #fff;
+			background: #038eff;
 			box-shadow: 0px 0px 10px 0px #666;
 		}
 
@@ -774,12 +775,12 @@ body{
 		}
 		.contact-form-txt::placeholder
 		{
-			color: #aaa;
+			color: #000000;
             font-size: 1.5rem;
 		}
         .contact-form-email::placeholder
 		{
-			color: #aaa;
+			color: #000000;
             font-size: 1.5rem;
 		}
 		.contact-form-txtarea
@@ -807,7 +808,7 @@ body{
             outline: none;
             border: none;
             border-radius: 5rem;
-            background: white;
+            background: rgb(237, 239, 220);
             border-style: groove;
             border-color: #002e5f;
             font-size: 1.5rem;
@@ -820,7 +821,7 @@ body{
             letter-spacing: .1rem;
             opacity: .9;
             color: white;
-            background: #002e5f;
+            background: #aa05dc;
         }
 		.contact-form-phone
 		{
@@ -836,7 +837,7 @@ body{
 		}
 		.contact-form-phone::placeholder
 		{
-			color: #aaa;
+			color: #000000;
             font-size: 1.5rem;
 		}
 
