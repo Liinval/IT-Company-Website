@@ -548,50 +548,90 @@ body{
 
 .clients {
     position: relative;
-    padding: 90px 0;
+    padding: 100px 0;
     text-align: center;
-    margin-top: -10rem;
-    margin-bottom: -10rem;
+    background: linear-gradient(180deg, #fff 0%, #f0fcff 100%);
+}
+
+.clients .section-header h2 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #0891b2; /* Cyan 700 */
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .clients .section-header p {
-    padding-bottom: 10px;
-    margin-top: 2.5rem;
-    text-align: center;
-    font-size: 2rem;
-    color: #333;
-    padding: 1rem 0;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    color: #4b5563;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5rem;
 }
 
-.clients img {
-    max-width: 100%;
-    opacity: 1;
-    transition: 0.3s;
-    padding: 15px 0;
+.clients-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+    overflow-x: hidden; /* Ensure it stays linear on desktop */
 }
 
-.clients img:hover {
-    opacity: .5;
+.client-card {
+    background: #ecfeff; /* Cyan 50 */
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(8, 145, 178, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 2px solid #cffafe; /* Cyan 100 */
+    flex: 0 0 200px; /* Force consistent width for linear layout */
 }
 
-.clients .owl-nav,
-.clients .owl-dots {
-    margin-top: 5px;
-    text-align: center;
+.client-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(8, 145, 178, 0.2);
+    border-color: #06b6d4; /* Cyan 500 */
+    background: #fff;
 }
 
-.clients .owl-dot {
-    display: inline-block;
-    margin: 0 5px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #ddd;
+.client-card img {
+    max-width: 140px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: all 0.3s ease;
 }
 
-.clients .owl-dot.active {
-    background-color: #4F84C4;
-}    
+.client-card span {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0e7490; /* Cyan 800 */
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 1100px) {
+    .clients-grid {
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 30px;
+    }
+    .client-card {
+        flex: 0 0 180px;
+    }
+}
 
 .team{
     min-width: 100vw;
