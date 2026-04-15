@@ -760,6 +760,7 @@ body{
 			outline: none;
 			margin-bottom: 20px;
 			padding: 15px;
+            background: rgb(237, 239, 220);
 		}
         .contact-form-email
 		{
@@ -772,6 +773,7 @@ body{
 			outline: none;
 			margin-bottom: 20px;
 			padding: 15px;
+            background: rgb(237, 239, 220);
 		}
 		.contact-form-txt::placeholder
 		{
@@ -795,10 +797,11 @@ body{
 			margin-bottom: 20px;
 			padding: 15px;
 			font-family: 'Poppins', sans-serif;
+            background: rgb(237, 239, 220);
 		}
 		.contact-form-txtarea::placeholder
 		{
-			color: #aaa;
+			color: #000000;
             font-size: 1.5rem;
 		}
 
@@ -834,6 +837,7 @@ body{
 			outline: none;
 			margin-bottom: 20px;
 			padding: 15px;
+            background: rgb(237, 239, 220);
 		}
 		.contact-form-phone::placeholder
 		{
