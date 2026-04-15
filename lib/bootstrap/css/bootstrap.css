@@ -152,13 +152,13 @@ sup {
 }
 
 a {
-  color: #007bff;
+  color: #f6b207;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #0056b3;
+  color: #f47e08;
   text-decoration: underline;
 }
 
@@ -4068,6 +4068,7 @@ input[type="button"].btn-block {
 }
 
 .nav {
+  
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
