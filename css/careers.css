@@ -73,8 +73,10 @@ body{
 .home{
     min-height: 70vh;
     width: 100vw;
-    background-image: url(../images/img3.jpg);
+    background-image: url(../images/img4.jpg);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,9 +88,9 @@ body{
 }
 
 .home h2{
-    color: #fff;
+    color: #ffffff;
     font-size: 5.5rem;
-}
+}ss
 
 .career-heading{
     text-align: center;
